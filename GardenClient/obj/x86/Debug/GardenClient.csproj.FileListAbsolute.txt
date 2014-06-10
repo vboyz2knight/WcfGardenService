@@ -1,0 +1,6 @@
+E:\Programming\WcfGardenService\WcfGardenService\GardenClient\bin\Debug\GardenClient.exe.config
+E:\Programming\WcfGardenService\WcfGardenService\GardenClient\bin\Debug\GardenClient.exe
+E:\Programming\WcfGardenService\WcfGardenService\GardenClient\bin\Debug\GardenClient.pdb
+E:\Programming\WcfGardenService\WcfGardenService\GardenClient\obj\x86\Debug\GardenClient.exe
+E:\Programming\WcfGardenService\WcfGardenService\GardenClient\obj\x86\Debug\GardenClient.pdb
+E:\Programming\WcfGardenService\WcfGardenService\GardenClient\obj\x86\Debug\GardenClient.csprojResolveAssemblyReference.cache

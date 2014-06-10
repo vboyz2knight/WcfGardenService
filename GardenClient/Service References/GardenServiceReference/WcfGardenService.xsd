@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfGardenService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfGardenService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPlant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Plant" nillable="true" type="tns:Plant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPlant" nillable="true" type="tns:ArrayOfPlant" />
+  <xs:complexType name="Plant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="coldestHardiness" type="tns:hardinessZone" />
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hottestHardiness" type="tns:hardinessZone" />
+      <xs:element minOccurs="0" name="lightExposure" type="tns:sunExposure" />
+      <xs:element minOccurs="0" name="maintenance" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="seedStartMonths" nillable="true" type="tns:ArrayOfMonth" />
+      <xs:element minOccurs="0" name="type" type="tns:plantType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Plant" nillable="true" type="tns:Plant" />
+  <xs:simpleType name="hardinessZone">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="zero" />
+      <xs:enumeration value="one" />
+      <xs:enumeration value="two" />
+      <xs:enumeration value="three" />
+      <xs:enumeration value="four" />
+      <xs:enumeration value="five" />
+      <xs:enumeration value="six" />
+      <xs:enumeration value="seven" />
+      <xs:enumeration value="eight" />
+      <xs:enumeration value="nine" />
+      <xs:enumeration value="ten" />
+      <xs:enumeration value="eleven" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="hardinessZone" nillable="true" type="tns:hardinessZone" />
+  <xs:simpleType name="sunExposure">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="full_shade" />
+      <xs:enumeration value="partial_shade" />
+      <xs:enumeration value="full_sun" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="sunExposure" nillable="true" type="tns:sunExposure" />
+  <xs:complexType name="ArrayOfMonth">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Month" type="tns:Month" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMonth" nillable="true" type="tns:ArrayOfMonth" />
+  <xs:simpleType name="Month">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="January" />
+      <xs:enumeration value="February" />
+      <xs:enumeration value="March" />
+      <xs:enumeration value="April" />
+      <xs:enumeration value="May" />
+      <xs:enumeration value="June" />
+      <xs:enumeration value="July" />
+      <xs:enumeration value="August" />
+      <xs:enumeration value="September" />
+      <xs:enumeration value="October" />
+      <xs:enumeration value="November" />
+      <xs:enumeration value="December" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Month" nillable="true" type="tns:Month" />
+  <xs:simpleType name="plantType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="annual" />
+      <xs:enumeration value="perenial" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="plantType" nillable="true" type="tns:plantType" />
+</xs:schema>

@@ -1,0 +1,12 @@
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\WcfGardenService.dll.config
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\WcfGardenService.dll
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\WcfGardenService.pdb
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\obj\Debug\WcfGardenService.dll
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\obj\Debug\WcfGardenService.pdb
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\obj\Debug\WcfGardenService.csprojResolveAssemblyReference.cache
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\GardenEntities.dll
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\GardenLogic.dll
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\GardenEntities.pdb
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\GardenLogic.pdb
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\GardenDAO.dll
+E:\Programming\WcfGardenService\WcfGardenService\WcfGardenService\bin\Debug\GardenDAO.pdb

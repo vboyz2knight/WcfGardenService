@@ -1,0 +1,5 @@
+E:\Programming\WcfGardenService\WcfGardenService\GardenEntities\bin\Debug\GardenEntities.dll
+E:\Programming\WcfGardenService\WcfGardenService\GardenEntities\bin\Debug\GardenEntities.pdb
+E:\Programming\WcfGardenService\WcfGardenService\GardenEntities\obj\Debug\GardenEntities.dll
+E:\Programming\WcfGardenService\WcfGardenService\GardenEntities\obj\Debug\GardenEntities.pdb
+E:\Programming\WcfGardenService\WcfGardenService\GardenEntities\obj\Debug\GardenEntities.csprojResolveAssemblyReference.cache
