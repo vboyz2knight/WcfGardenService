@@ -75,4 +75,10 @@
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="plantType" nillable="true" type="tns:plantType" />
+  <xs:complexType name="GardenFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GardenFault" nillable="true" type="tns:GardenFault" />
 </xs:schema>

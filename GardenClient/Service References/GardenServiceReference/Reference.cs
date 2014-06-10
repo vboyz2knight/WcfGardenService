@@ -280,26 +280,78 @@ namespace GardenClient.GardenServiceReference {
         perenial = 1,
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GardenFault", Namespace="http://schemas.datacontract.org/2004/07/WcfGardenService")]
+    [System.SerializableAttribute()]
+    public partial class GardenFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FaultMessageField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FaultMessage {
+            get {
+                return this.FaultMessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FaultMessageField, value) != true)) {
+                    this.FaultMessageField = value;
+                    this.RaisePropertyChanged("FaultMessage");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GardenServiceReference.IGardenService")]
     public interface IGardenService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGardenService/ViewAllPlantsInGarden", ReplyAction="http://tempuri.org/IGardenService/ViewAllPlantsInGardenResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(GardenClient.GardenServiceReference.GardenFault), Action="http://tempuri.org/IGardenService/ViewAllPlantsInGardenGardenFaultFault", Name="GardenFault", Namespace="http://schemas.datacontract.org/2004/07/WcfGardenService")]
         GardenClient.GardenServiceReference.Plant[] ViewAllPlantsInGarden();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGardenService/ListAnnual", ReplyAction="http://tempuri.org/IGardenService/ListAnnualResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(GardenClient.GardenServiceReference.GardenFault), Action="http://tempuri.org/IGardenService/ListAnnualGardenFaultFault", Name="GardenFault", Namespace="http://schemas.datacontract.org/2004/07/WcfGardenService")]
         GardenClient.GardenServiceReference.Plant[] ListAnnual();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGardenService/ListPerenial", ReplyAction="http://tempuri.org/IGardenService/ListPerenialResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(GardenClient.GardenServiceReference.GardenFault), Action="http://tempuri.org/IGardenService/ListPerenialGardenFaultFault", Name="GardenFault", Namespace="http://schemas.datacontract.org/2004/07/WcfGardenService")]
         GardenClient.GardenServiceReference.Plant[] ListPerenial();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGardenService/ListPlantsInZone", ReplyAction="http://tempuri.org/IGardenService/ListPlantsInZoneResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(GardenClient.GardenServiceReference.GardenFault), Action="http://tempuri.org/IGardenService/ListPlantsInZoneGardenFaultFault", Name="GardenFault", Namespace="http://schemas.datacontract.org/2004/07/WcfGardenService")]
         GardenClient.GardenServiceReference.Plant[] ListPlantsInZone(GardenClient.GardenServiceReference.hardinessZone myZone);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGardenService/ListPlantsRequireThisSunExposure", ReplyAction="http://tempuri.org/IGardenService/ListPlantsRequireThisSunExposureResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(GardenClient.GardenServiceReference.GardenFault), Action="http://tempuri.org/IGardenService/ListPlantsRequireThisSunExposureGardenFaultFaul" +
+            "t", Name="GardenFault", Namespace="http://schemas.datacontract.org/2004/07/WcfGardenService")]
         GardenClient.GardenServiceReference.Plant[] ListPlantsRequireThisSunExposure(GardenClient.GardenServiceReference.sunExposure mySun);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGardenService/PlantsToPlantInThisMonth", ReplyAction="http://tempuri.org/IGardenService/PlantsToPlantInThisMonthResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(GardenClient.GardenServiceReference.GardenFault), Action="http://tempuri.org/IGardenService/PlantsToPlantInThisMonthGardenFaultFault", Name="GardenFault", Namespace="http://schemas.datacontract.org/2004/07/WcfGardenService")]
         GardenClient.GardenServiceReference.Plant[] PlantsToPlantInThisMonth(GardenClient.GardenServiceReference.Month thisMonth);
     }
     
