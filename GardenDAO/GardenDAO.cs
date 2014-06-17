@@ -7,6 +7,9 @@ using System.Data;
 using System.Data.SqlServerCe;
 using System.IO;
 
+/*this project get the datas for the calls 
+ not sure how to handle errors*/
+
 namespace GardenDAL
 {
     public class GardenDAO

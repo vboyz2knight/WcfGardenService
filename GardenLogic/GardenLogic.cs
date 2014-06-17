@@ -5,6 +5,8 @@ using System.Text;
 using GardenEntities;
 using GardenDAL;
 
+/* control any business logic in this project */
+
 namespace GardenLogics
 {
     public class GardenLogic
